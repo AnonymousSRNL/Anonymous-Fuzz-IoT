@@ -1,0 +1,9 @@
+node automateFindInstrumentor.js 
+
+node "i_....js"
+//Set-ExecutionPolicy Bypass -Scope Process -Force
+
+jsonAwareFuzz newJsonAwareFuzz.js corpus
+
+
+npx nyc report --reporter=html

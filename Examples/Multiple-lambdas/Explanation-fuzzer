@@ -1,0 +1,32 @@
+test case -1 (1,2,3) -- -coverage=3   
+test case -2 (3,4,5,6) --- coverage=4  coverage=6
+
+t-1 temp(1,2),hum(6,10),ac(4,8)       
+t-2 temp(2,3),hum(6,10,11),ac(1,5,8)
+
+After t1 global_temp=(1,2) , global_hum=(6,10), global_ac=(4,8), 
+After t-2 global_temp (1,2,3) , global_hum=(6,10,11) , global_ac=(1,4,5,8)
+
+t-1 temp(1,2),hum(6,10),ac(4,8)       
+t-2 temp(2,3),hum(6,10,11)
+
+
+
+
+Absolute test cases
+t-1 temp(1,2),hum(6,10),ac(4,8)     
+t-2 temp(2,3),hum(6,10,11) ac=null
+
+Accumulated test cases
+After t1 global_temp=(1,2) , global_hum=(6,10), global_ac=(4,8), 
+After t-2 global_temp (1,2,3) , global_hum=(6,10,11) global_ac=4,8
+After t-3 global_temp (1,2,3) , global_hum=(6,10,11) global_ac=4,8
+
+
+ fuzzer(10s) ---->lambda-1----5secons---->lambda-3
+
+                lambda-2
+
+                lambda-3
+
+                lambda-4
