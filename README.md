@@ -45,7 +45,7 @@ JSONAware-Fuzzer/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/Nagalakshmi-Athreya/Anonymous-Fuzz-IoT.git
+git clone url.git
 cd JSONAware-Fuzzer
 ````
 
